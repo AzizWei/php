@@ -15,13 +15,7 @@
 
     <!-- 內容 -->
     <section id="manege">
-        <div class="sidebar">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-bars-progress"></i>Index</a></li>
-                <li><a href="#"><i class="fa-solid fa-database"></i>Database</a></li>
-                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
-            </ul>
-        </div>
+        <?php include 'sidebar.php'?>
         <div class="content_wrapper">
             <div class="logintime">Hi! Someone Login Time:</div>
             <div class="content">
@@ -108,8 +102,8 @@
                         <input type="text" name="TopSpeed" id="TopSpeed" placeholder="182">
                     </div>
                     <div class="btn_group">
-                        <button class="btn" type="reset">Reset</button>
-                        <button class="btn" type="submit">Submit</button>
+                        <button class="btn" type="reset"><i class="fa-solid fa-xmark"></i> Reset</button>
+                        <button class="btn" type="submit"><i class="fa-solid fa-check"></i> Submit</button>
                     </div>
                 </form>
             </div>
