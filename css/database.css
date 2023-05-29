@@ -1,0 +1,168 @@
+#manege {
+  display: inline-flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: var(--third-bg-color);
+  width: 12%;
+  z-index: 99;
+}
+.sidebar:hover {
+  box-shadow: 3px 0px 20px black;
+}
+.sidebar a {
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  display: block;
+  width: 100%;
+  padding: 5% 2rem;
+}
+.sidebar a:hover {
+  box-shadow: inset 6px 0px var(--main-color);
+}
+.sidebar a i {
+  margin-right: 1rem;
+}
+
+.content_wrapper {
+  width: 88%;
+  position: relative;
+}
+.content_wrapper .logintime {
+  background-color: var(--text-color);
+  text-align: end;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+}
+.content_wrapper .WelcomeText {
+  font-size: 2.5rem;
+  padding: 1.2rem 2rem;
+  color: var(--text-color);
+  width: 80%;
+}
+.content_wrapper .WelcomeText p {
+  font-size: 2rem;
+}
+.content_wrapper .WelcomeText p span.name {
+  color: var(--main-color);
+}
+.content_wrapper .WelcomeText p span.note {
+  box-shadow: inset 0 -5px var(--main-color);
+}
+.content_wrapper img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.content_wrapper .content {
+  background: var(--third-bg-color);
+  height: 70vh;
+  margin: 0.5rem 2rem;
+  position: relative;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.content_wrapper .content .pageGroup {
+  position: absolute;
+  top: -1rem;
+  left: 0rem;
+}
+.content_wrapper .content .pageGroup .btn {
+  font-size: 1.5rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+form#searchInput .inputGroup {
+  height: 1.6rem;
+}
+form#searchInput .inputGroup input {
+  font-size: 1.6rem;
+  width: 30%;
+  font-family: "Asap Condensed", sans-serif;
+  padding-left: 1%;
+}
+form#searchInput .inputGroup .btn {
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.6rem;
+  margin: 0px 0.5rem 0 0;
+  line-height: 1.6rem;
+}
+form#searchInput .inputGroup .btn:after {
+  content: " Search";
+  font-family: "Asap Condensed", sans-serif;
+}
+
+form#insert {
+  width: 50%;
+}
+form#insert h1 {
+  font-size: 2.5rem;
+  color: var(--bg-color);
+}
+form#insert .inputGroup {
+  margin-bottom: 0.3rem;
+}
+form#insert .inputGroup label {
+  display: inline-block;
+  width: 15rem;
+  font-size: 1.6rem;
+  padding-left: 2%;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+}
+form#insert .inputGroup input {
+  font-size: 1.6rem;
+  width: 25rem;
+  margin-left: 0.3rem;
+}
+form#insert .btn_group {
+  position: relative;
+  margin-top: 1.6rem;
+}
+form#insert .btn_group .btn {
+  font-size: 1.6rem;
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.6rem;
+  margin: 0px 0.5rem 0 0;
+  position: relative;
+  left: 65%;
+}
+
+#datamsg {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  width: 90%;
+}
+#datamsg th, #datamsg td {
+  text-align: center;
+  border-bottom: 2px solid var(--text-color);
+  font-family: "Asap Condensed", sans-serif;
+}
+#datamsg th {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+#datamsg a {
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.6rem;
+  margin: 0px 0.5rem 0 0;
+}
+#datamsg a:nth-child(1)::after {
+  content: " Modify";
+  font-family: "Asap Condensed", sans-serif;
+}
+#datamsg a:nth-child(2)::after {
+  content: " Delete";
+  font-family: "Asap Condensed", sans-serif;
+}

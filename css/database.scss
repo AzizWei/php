@@ -1,0 +1,175 @@
+@mixin btnType{
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: .2rem .6rem ;
+    margin: 0px .5rem 0 0;
+}
+
+#manege{
+    display: inline-flex;
+    width: 100%;
+}
+
+// *{
+//     border: 1px solid red;
+// }
+.sidebar{
+    background-color: var(--third-bg-color);
+    width: 12%;
+    z-index: 99;
+
+    &:hover{
+        box-shadow: 3px 0px 20px black;
+    }
+
+    a{
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        display: block;
+        width: 100%;
+        padding: 5% 2rem;
+        &:hover{
+            box-shadow: inset 6px 0px var(--main-color);
+        }
+
+        i{
+            margin-right: 1rem;
+        }
+    }
+}
+
+.content_wrapper{
+    width: 88%;
+    position: relative;
+
+    .logintime{
+        background-color: var(--text-color);
+        text-align: end;
+        font-size: 1.6rem;
+        padding: .6rem;
+    }
+
+    .WelcomeText{
+        font-size: 2.5rem;
+        padding: 1.2rem 2rem;
+        color: var(--text-color);
+        width: 80%;
+
+        p{  
+            font-size: 2rem;
+            span.name{
+                color: var(--main-color);
+            }
+            span.note{
+                box-shadow: inset 0 -5px var(--main-color);
+            }
+        }
+    }
+    img{
+        // width: 1000px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .content{
+        background: var(--third-bg-color);
+        height: 70vh;
+        margin: .5rem 2rem;
+        position: relative;
+        padding: 2rem;
+        margin-top: 3rem;
+        .pageGroup{
+            position: absolute;
+            top: -1rem;
+            left: 0rem;
+            .btn{
+                font-size: 1.5rem;
+                background-color: var(--main-color);
+                color: var(--text-color);
+                padding: .2rem .5rem ;
+                margin-right: .2rem;
+                border-radius: .5rem .5rem 0 0 ;
+            }
+        }
+    }
+}
+form#searchInput{
+    .inputGroup{
+        height: 1.6rem;
+        input{
+            font-size: 1.6rem;
+            width: 30%;
+            font-family: 'Asap Condensed', sans-serif;
+            padding-left: 1%;
+        }
+        .btn{
+            @include btnType();
+            line-height: 1.6rem;
+            &:after{
+                content: " Search";
+                font-family: 'Asap Condensed', sans-serif;
+            }
+        }
+    }
+}
+form#insert{
+    width: 50%;
+
+    h1{
+        font-size: 2.5rem;
+        color: var(--bg-color);
+    }
+    .inputGroup{
+        margin-bottom: .3rem;
+        label{
+            display: inline-block;
+            width: 15rem;
+            font-size: 1.6rem;
+            padding-left: 2%;
+            background-color: var(--second-bg-color);
+            color: var(--text-color);
+        }
+        input{
+            font-size: 1.6rem;
+            width: 25rem;
+            margin-left: .3rem;
+        }
+    }
+    .btn_group{
+        position: relative;
+        margin-top: 1.6rem;
+        .btn{
+            font-size: 1.6rem;
+            @include btnType();
+            position: relative;
+            left: 65%;
+        }
+    }
+}
+#datamsg{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    width: 90%;
+    th,td{
+        text-align: center;
+        border-bottom: 2px solid var(--text-color);
+        font-family: 'Asap Condensed', sans-serif;
+    }
+    th{
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+    a{  
+        @include btnType();
+
+        &:nth-child(1)::after{
+            content: " Modify";
+            font-family: 'Asap Condensed', sans-serif;
+        }
+        &:nth-child(2)::after{
+            content: " Delete";
+            font-family: 'Asap Condensed', sans-serif;
+        }
+    }
+}

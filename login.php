@@ -9,20 +9,13 @@
     <script src="https://kit.fontawesome.com/de998ff9a0.js" crossorigin="anonymous"></script>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- 進場動畫 using animate.css -->
+    <!-- using animate.css -->
     <div id="filter">
         <h1 class=" animate__bounceOut">Welcome</h1>
     </div>
-    <script>
-        var timer = setTimeout(function(){
-            let filter=document.getElementById("filter");
-            filter.style.display="none"
-            clearTimeout(timer); 
-        },1200);
-    </script>
     <!-- header -->
     <?php include 'header.php'; ?>
-
+    
     <!-- 內容 -->
     <section id="login">
         <div class="loginbox">
@@ -54,5 +47,14 @@
 
     <!-- footer -->
     <?php include 'footer.php'; ?>
+    
+    <!-- using animate.css -->
+    <script>
+        var timer = setTimeout(function(){
+            let filter=document.getElementById("filter");
+            filter.style.display="none"
+            clearTimeout(timer); 
+        },1200);
+    </script>
 </body>
 </html>

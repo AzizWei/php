@@ -7,11 +7,12 @@
 }
 
 body {
+  height: 100vh;
   background-color: var(--second-bg-color);
 }
 
 section {
-  height: 80vh;
+  height: 85vh;
 }
 
 * {
@@ -74,7 +75,7 @@ header #menu {
 
 footer {
   background: var(--bg-color);
-  height: 10vh;
+  height: 5vh;
   font-family: "Noto Sans TC", sans-serif;
   color: var(--text-color);
   text-align: center;
