@@ -44,17 +44,8 @@
             </form>
         </div>
     </section>
-
+    <script src="./js/outside.js"></script>
     <!-- footer -->
     <?php include 'footer.php'; ?>
-    
-    <!-- using animate.css -->
-    <script>
-        var timer = setTimeout(function(){
-            let filter=document.getElementById("filter");
-            filter.style.display="none"
-            clearTimeout(timer); 
-        },1200);
-    </script>
 </body>
 </html>

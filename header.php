@@ -1,5 +1,3 @@
-
-
 <!-- start -->
 <header class="header">
     <a href="#"class="fa-solid fa-rocket logo" id="logo">
