@@ -4,6 +4,7 @@
   --third-bg-color:rgb(220, 215, 201);
   --text-color:white;
   --main-color:rgb(162, 123, 92);
+  --alert-color:rgb(161, 33, 33);
 }
 
 body {
@@ -71,6 +72,15 @@ header #menu {
   font-size: 35px;
   color: var(--text-color);
   line-height: 10vh;
+}
+
+.pageRow {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+.pageRow a {
+  margin: 0px 0.6rem;
 }
 
 footer {

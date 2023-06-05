@@ -15,16 +15,16 @@
          if (mysqli_num_rows($result) == 0)
              {$varErrmessage ="請輸入正確帳號".mysqli_error($link);}
          else
-           { $row = mysqli_fetch_assoc($result);	 	 
-            if ($varPassword==$row['passwd']){
+           { $row = mysqli_fetch_assoc($result);	  //抓到MySQL裡面的欄位名稱儲存在$row變數裡面
+            if ($varPassword==$row['mpassword']){       
                 $_SESSION['sAccount']=$varAccount;
                 $_SESSION['sname']=$row['mname'];
                 $_SESSION['sLogintime']=date("Y-m-d H:i:s");
-                $sql = "update member set lastlogindatetime = '".$_SESSION['sLogintime']."' where mid='$varAccount'"; // 指定SQL查詢字串
+                $sql = "update `member` set lastlogindatetime = '".$_SESSION['sLogintime']."' where musername='$varAccount'"; 
                 echo $sql;
                 $result = mysqli_query($link, $sql);			
                 mysqli_close($link);  // 關閉資料庫連接
-                header('Location: index.php');}
+                header('Location: index.php');}  //導向index頁面
             else
                 $varErrmessage ="請輸入正確密碼";
             }
@@ -38,10 +38,6 @@
     <?php include 'head.php'; ?>
 </head>
 <body>
-    <!-- fontawesome-->
-    <script src="https://kit.fontawesome.com/de998ff9a0.js" crossorigin="anonymous"></>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- using animate.css -->
     <div id="filter">
         <h1 class=" animate__bounceOut">Welcome</h1>

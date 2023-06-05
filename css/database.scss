@@ -6,7 +6,7 @@
     margin: 0px .5rem 0 0;
 }
 
-#manege{
+#manage{
     display: inline-flex;
     width: 100%;
 }
@@ -147,10 +147,10 @@ form#insert{
         }
     }
 }
-#datamsg{
+.datamsg{
     font-size: 1.7rem;
     margin-top: 2rem;
-    width: 90%;
+    width: 100%;
     th,td{
         text-align: center;
         border-bottom: 2px solid var(--text-color);
@@ -160,8 +160,9 @@ form#insert{
         background: var(--bg-color);
         color: var(--text-color);
     }
-    a{  
+    .btn{  
         @include btnType();
+        font-family: 'Asap Condensed', sans-serif;
 
         &:nth-child(1)::after{
             content: " Modify";
@@ -170,6 +171,42 @@ form#insert{
         &:nth-child(2)::after{
             content: " Delete";
             font-family: 'Asap Condensed', sans-serif;
+        }
+    }
+}
+
+
+form#update{
+    width: 50%;
+
+    h1{
+        font-size: 2.5rem;
+        color: var(--bg-color);
+    }
+    .inputGroup{
+        margin-bottom: .3rem;
+        label{
+            display: inline-block;
+            width: 15rem;
+            font-size: 1.6rem;
+            padding-left: 2%;
+            background-color: var(--alert-color);
+            color: var(--text-color);
+        }
+        input{
+            font-size: 1.6rem;
+            width: 25rem;
+            margin-left: .3rem;
+        }
+    }
+    .btn_group{
+        position: relative;
+        margin-top: 1.6rem;
+        .btn{
+            font-size: 1.6rem;
+            @include btnType();
+            position: relative;
+            left: 60%;
         }
     }
 }

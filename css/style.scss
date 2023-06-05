@@ -4,6 +4,7 @@
     --third-bg-color:rgb(220, 215, 201);
     --text-color:white;
     --main-color:rgb(162, 123, 92);
+    --alert-color:rgb(161, 33, 33);
 }
 
 body{
@@ -74,7 +75,14 @@ header{
     }
 }
 
-
+.pageRow{
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    a{
+        margin:0px .6rem;
+    }
+}
 
 
 footer{
@@ -87,3 +95,4 @@ footer{
     padding-top:1rem ;
     font-size: 1.2rem;
 }
+

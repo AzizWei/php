@@ -1,4 +1,4 @@
-#manege {
+#manage {
   display: inline-flex;
   width: 100%;
 }
@@ -137,32 +137,71 @@ form#insert .btn_group .btn {
   left: 60%;
 }
 
-#datamsg {
+.datamsg {
   font-size: 1.7rem;
   margin-top: 2rem;
-  width: 90%;
+  width: 100%;
 }
-#datamsg th, #datamsg td {
+.datamsg th, .datamsg td {
   text-align: center;
   border-bottom: 2px solid var(--text-color);
   font-family: "Asap Condensed", sans-serif;
 }
-#datamsg th {
+.datamsg th {
   background: var(--bg-color);
   color: var(--text-color);
 }
-#datamsg a {
+.datamsg .btn {
   font-size: 1.2rem;
   background-color: var(--main-color);
   color: var(--text-color);
   padding: 0.2rem 0.6rem;
   margin: 0px 0.5rem 0 0;
+  font-family: "Asap Condensed", sans-serif;
 }
-#datamsg a:nth-child(1)::after {
+.datamsg .btn:nth-child(1)::after {
   content: " Modify";
   font-family: "Asap Condensed", sans-serif;
 }
-#datamsg a:nth-child(2)::after {
+.datamsg .btn:nth-child(2)::after {
   content: " Delete";
   font-family: "Asap Condensed", sans-serif;
+}
+
+form#update {
+  width: 50%;
+}
+form#update h1 {
+  font-size: 2.5rem;
+  color: var(--bg-color);
+}
+form#update .inputGroup {
+  margin-bottom: 0.3rem;
+}
+form#update .inputGroup label {
+  display: inline-block;
+  width: 15rem;
+  font-size: 1.6rem;
+  padding-left: 2%;
+  background-color: var(--alert-color);
+  color: var(--text-color);
+}
+form#update .inputGroup input {
+  font-size: 1.6rem;
+  width: 25rem;
+  margin-left: 0.3rem;
+}
+form#update .btn_group {
+  position: relative;
+  margin-top: 1.6rem;
+}
+form#update .btn_group .btn {
+  font-size: 1.6rem;
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.6rem;
+  margin: 0px 0.5rem 0 0;
+  position: relative;
+  left: 60%;
 }
